@@ -11,6 +11,10 @@ class Cliente {
         return rows[0];
     }
 
+    static async findByEmail(email) {
+        const { rows } = await pool.query('SELECT * FROM clientes WHERE email = $1', [email]);
+        return rows[0];
+    }
     
     static async create(nome, email, telefone, coordenada_x, coordenada_y) {
         const { rows } = await pool.query(

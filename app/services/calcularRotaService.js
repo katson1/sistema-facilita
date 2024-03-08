@@ -1,10 +1,11 @@
 const Cliente = require('../models/cliente');
 
 const calcularRota = async () => {
-    const clientes = await Cliente.findAllWithCoord();
-
+    const clientes = await Cliente.findAll();
+    
     let rota = [[0, 0]];
     let rotaIds = [];
+    
     let visitados = new Array(clientes.length).fill(false);
 
     let atual = rota[0];
@@ -35,8 +36,9 @@ const calcularRota = async () => {
         } else {
             break;
         }
-
     }
+
+    rota.push([0, 0]);
 
     return rotaIds;
 };
