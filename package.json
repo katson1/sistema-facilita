@@ -4,10 +4,11 @@
   "description": "Sistema de Gerenciamento de Clientes - Facilita",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Katson Matheus",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
