@@ -8,12 +8,12 @@ const findClienteById = async (id) => {
     return await Cliente.findById(id);
 };
 
-const createCliente = async (nome, email, telefone) => {
-    return await Cliente.create(nome, email, telefone);
+const createCliente = async (nome, email, telefone, coordenada_x, coordenada_y) => {
+    return await Cliente.create(nome, email, telefone, coordenada_x, coordenada_y);
 };
 
-const updateCliente = async (id, nome, email, telefone) => {
-    return await Cliente.update(id, nome, email, telefone);
+const updateCliente = async (id, nome, email, telefone, coordenada_x, coordenada_y) => {
+    return await Cliente.update(id, nome, email, telefone, coordenada_x, coordenada_y);
 };
 
 const deleteCliente = async (id) => {

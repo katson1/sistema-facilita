@@ -23,20 +23,20 @@ const getClienteById = async (req, res) => {
 };
 
 const createCliente = async (req, res) => {
+    const { nome, email, telefone, coordenada_x, coordenada_y } = req.body;
     try {
-        const { nome, email, telefone } = req.body;
-        const cliente = await clienteService.createCliente(nome, email, telefone);
-        res.status(201).json(cliente);
+        const novoCliente = await clienteService.createCliente(nome, email, telefone, coordenada_x, coordenada_y);
+        res.json(novoCliente);
     } catch (error) {
-        res.status(500).json({ message: 'Erro ao criar o cliente', error: error.message });
+        res.status(500).send(error.message);
     }
 };
 
 const updateCliente = async (req, res) => {
     try {
         const { id } = req.params;
-        const { nome, email, telefone } = req.body;
-        const cliente = await clienteService.updateCliente(id, nome, email, telefone);
+        const { nome, email, telefone, coordenada_x, coordenada_y } = req.body;
+        const cliente = await clienteService.updateCliente(id, nome, email, telefone, coordenada_x, coordenada_y);
         if (!cliente) {
             return res.status(404).json({ message: 'Cliente não encontrado' });
         }
