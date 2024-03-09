@@ -54,17 +54,22 @@ ADD COLUMN coordenada_y INTEGER;
 ```
 
 ### Agora que temos o banco e tabela criados, vamos ao projeto:
-
-1. Clone o projeto.
-
+1. Clone o projeto [frontend](https://github.com/katson1/sistema-facilita-frontend).
 2. Instale os pacotes necessários no projeto.
-    
-Na pasta do projeto, utilize o seguinte comando no terminal:
-
   ```
 npm install
   ```
 
+### Agora que temos o frontend e tabela criados, vamos ao projeto back-end:
+Na pasta do projeto, utilize o seguinte comando no terminal:
+1. Clone este projeto.
+
+2. Instale os pacotes necessários no projeto.
+    
+Na pasta do projeto, utilize o seguinte comando no terminal:
+  ```
+npm install
+  ```
 3. Configure o .env
    
 Copie o arquivo .env.example para .env:
@@ -79,11 +84,17 @@ Na pasta do projeto, utilize o seguinte comando:
   ```
 npm start
   ```
-
+5. Execute o projeto front-end
+   
+Na pasta do projeto front-end, utilize o seguinte comando:
+  ```
+npm start
+  ```
+Uma janela do navegador padrão irá abrir.
 <a name="routes"></a>
 ## Como usar a API (rotas):
 
-Acesse: http://localhost:3000/api-docs/
+Acesse: http://localhost:3001/api-docs/
 
 
 ## Authors:
