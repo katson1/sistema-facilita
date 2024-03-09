@@ -33,7 +33,7 @@ const calcularRota = async () => {
             const proximoCliente = clientes[proximoIndex];
             atual = [proximoCliente.coordenada_x, proximoCliente.coordenada_y];
             rota.push(atual);
-            rotaClientes.push(proximoCliente.id);
+            rotaClientes.push(proximoCliente);
             visitados[proximoIndex] = true;
             totalVisitados++;
         } else {
