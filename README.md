@@ -1,6 +1,8 @@
 # API-facilita
 Sistema de Gerenciamento de Clientes e Geração de Menor Rota - Facilita
 
+Vídeo de explicação do projeto: [(youtube)](https://youtu.be/vu_3tPKem_g)
+
 > [Como instalar a API localmente:](#dev)
 
 > [Como usar a API:](#routes)
