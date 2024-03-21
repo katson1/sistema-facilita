@@ -44,7 +44,7 @@ CREATE TABLE clientes (
   telefone VARCHAR(255) NOT NULL
 );
 ```
-6. Alteração da Tabela
+5. Alteração da Tabela
    
 Para adicionar as colunas coordenada_x e coordenada_y na tabela clientes, execute:
 ```
