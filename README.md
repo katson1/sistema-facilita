@@ -8,7 +8,7 @@ Sistema de Gerenciamento de Clientes e Geração de Menor Rota - Facilita
 <a name="dev"></a>
 ## Como instalar a API localmente:
 
-**Você precisa ter instalado na sua máquina:**  [node.js v20](https://nodejs.org/en/download/) and [postgres v16.0](https://www.postgresql.org/download/).
+**Você precisa ter instalado na sua máquina:**  [node.js v20](https://nodejs.org/en/download/) e [postgres v16.0](https://www.postgresql.org/download/).
 
 1. Acesso ao PostgreSQL
    
