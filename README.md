@@ -97,5 +97,5 @@ Uma janela do navegador padrão irá abrir.
 Acesse: http://localhost:3001/api-docs/
 
 
-## Authors:
+## Author:
 - [Katson](https://github.com/katson1)
